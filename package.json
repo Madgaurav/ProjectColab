@@ -1,0 +1,10 @@
+{
+  "name": "projectcollab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student-led, college-first project collaboration platform",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/src/index.js"
+  }
+}

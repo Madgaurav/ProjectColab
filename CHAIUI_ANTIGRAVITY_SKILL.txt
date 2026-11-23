@@ -1,0 +1,138 @@
+CHAIUI DESIGN SKILL FOR ANTIGRAVITY
+
+Purpose
+
+Use this skill when designing or restyling ProjectCollab screens in the ChaiUI
+and chaicode.com visual language. The result should feel premium through
+restraint: near-black surfaces, clean typography, warm hairlines, a quiet
+cream accent, and almost no orange.
+
+
+1. DESIGN DIRECTION
+
+- Default to dark mode.
+- Use #0a0a0a or an equivalent neutral near-black page background.
+- Use near-white for primary text and neutral greys for secondary copy.
+- Use a pale cream accent, such as #f1dfc0, only for a highlighted phrase,
+  selected state, or quiet detail.
+- Avoid gradients, heavy shadows, glossy effects, and saturated colour blocks.
+- Keep layouts spacious, editorial, and easy to scan.
+
+
+2. TYPOGRAPHY
+
+- Use Manrope for body copy, labels, navigation, and general UI text.
+- Use Montserrat for card titles, buttons on cards, and highlight phrases.
+- Use Onest only for the product wordmark when available.
+- Use sentence case. Do not use all caps for headings or ordinary labels.
+- Use one cream-highlight phrase in a paragraph where it adds emphasis.
+- Do not use em dashes. Use a comma, colon, or full stop instead.
+
+Recommended sizing
+
+- Hero heading: 42px on small screens, 60px or more on desktop.
+- Page heading: 24px to 30px.
+- Section heading: 24px to 30px.
+- Lead copy: 16px to 20px, neutral grey, comfortable line height.
+- Supporting copy: 12px to 15px, neutral grey.
+
+
+3. CARDS AND SURFACES
+
+- Use dark, subtly transparent cards.
+- Use a warm, low-contrast 1px border.
+- Use 10px to 14px rounded corners.
+- Never use card shadows.
+- Cards may become fully opaque on hover and receive a slightly brighter
+  border, but should not jump, glow, or become colourful.
+- Use a maximum content width around 1152px to 1200px, with generous padding.
+
+Suggested dark card treatment
+
+  background: rgba(0, 0, 0, 0.12)
+  border: 1px solid rgba(241, 223, 192, 0.14)
+  border-radius: 12px
+  backdrop-filter: blur(12px)
+  box-shadow: none
+
+
+4. COLOUR RULES
+
+- Orange is never a button fill, heading fill, badge fill, tick, or progress
+  bar.
+- Orange or cream may appear as a small text highlight, logo detail, link
+  hover, thin footer line, or selected-state detail.
+- Status meaning uses text colour or a thin outline only:
+  - Green: complete, available, recruiting, or success
+  - Red: destructive or rejected
+  - Yellow: limited or caution
+  - Purple: special category only
+- Do not use filled status pills in bright colours.
+
+
+5. BUTTONS
+
+- Use only one primary solid action per main screen.
+- Main primary button: white or very light grey, dark text, asymmetric corners
+  with a rounded top-right and bottom-left corner, plus an ArrowUpRight icon.
+- Secondary buttons: transparent, thin bordered, mirrored asymmetric corners.
+- Card actions: quiet text link or small neutral button.
+- Destructive actions: red fill only after a confirmation dialog.
+
+
+6. PAGE STRUCTURE
+
+- Use a sticky transparent header. Add backdrop blur only after scrolling.
+- Keep one central visual focus in a hero. Do not surround it with tilted cards,
+  floating badges, or decorative clutter.
+- Use subtle geometric background texture, such as a faded hexagon or line
+  grid, concentrated near the top and fading toward the lower page.
+- Keep page headers simple: eyebrow, heading, lead paragraph, primary or
+  secondary action.
+- Use calm spacing between sections, usually 48px to 96px on desktop.
+
+
+7. MOTION
+
+- Keep interaction motion subtle, usually 200ms to 300ms.
+- Card hover may slightly increase opacity and border visibility.
+- Images may scale to 1.03 on hover.
+- Reveal content once while scrolling, not continuously.
+- Always respect prefers-reduced-motion.
+
+
+8. ACCESSIBILITY AND RESPONSIVENESS
+
+- Preserve strong text contrast.
+- Include clear focus states for all interactive controls.
+- Use keyboard-accessible buttons and semantic headings.
+- Check phone width around 390px with no horizontal scrolling.
+- Stack complex grids into one column on mobile.
+- Keep touch controls comfortably sized.
+- Ensure status is described in text, not colour alone.
+
+
+9. PROJECTCOLLAB-SPECIFIC RULES
+
+- Keep the student collaboration product calm and focused, not like a noisy
+  social network.
+- Use warm hairline cards for profiles, projects, applications, tasks, and
+  saved items.
+- Highlight only the most important phrase in explanatory copy.
+- Keep project state visible through text and subtle outlines.
+- Use confirmation dialogs before actions that remove members, transfer
+  ownership, archive projects, or discard user work.
+
+
+10. FINAL QUALITY CHECK
+
+Before completing a screen:
+
+- Check desktop and mobile layouts.
+- Confirm there is no horizontal overflow.
+- Confirm no use of orange button fills or #FF7D0C fills.
+- Confirm cards have no shadows.
+- Confirm there are no em dashes in visible copy.
+- Confirm each page has at most one dominant solid primary action.
+- Confirm headings and controls are accessible and readable.
+- Provide a screenshot for visual review.

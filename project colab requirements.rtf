@@ -1,0 +1,1393 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ============================================================\
+                    PROJECTCOLLAB\
+       STUDENT PROJECT COLLABORATION PLATFORM\
+============================================================\
+\
+1. PROJECT OVERVIEW\
+-------------------\
+\
+Project Name: ProjectCollab\
+\
+Project Type: Full-Stack Web Application\
+\
+Domain: Education, Student Collaboration, Team Formation\
+\
+Target Users: College Students\
+\
+ProjectCollab is a college-specific student project collaboration\
+platform that enables students from the same college to discover\
+projects, find teammates, recruit collaborators, and work together.\
+\
+Students can publish project ideas, specify the skills and roles\
+they require, and invite other students to apply.\
+\
+Other students can browse available projects, explore opportunities\
+matching their interests, and apply to join teams.\
+\
+The project owner can review applications and accept or reject\
+applicants. Once accepted, students become team members and can use\
+the platform's collaboration features.\
+\
+The platform also helps students who need partners for academic\
+projects, including mini-projects, major projects, research projects,\
+and hackathons.\
+\
+The initial version will focus on students from a single college.\
+Support for multiple colleges can be introduced in the future.\
+\
+\
+2. PROBLEM STATEMENT\
+--------------------\
+\
+Students frequently face difficulties finding suitable teammates\
+for academic and personal projects.\
+\
+The main problems include:\
+\
+1. Students' interests may differ from those of their friends.\
+\
+2. A student interested in AI/ML, cybersecurity, robotics, or another\
+   specialized field may not find interested teammates in their\
+   existing friend circle.\
+\
+3. Students working on major university projects may struggle to\
+   find reliable partners.\
+\
+4. Students with useful technical skills may not know about projects\
+   that need their contribution.\
+\
+5. Students with project ideas may not know where to recruit people\
+   with the required skills.\
+\
+6. Students without project ideas may still want to participate in\
+   projects and gain practical experience.\
+\
+7. Finding teammates through informal college groups can be\
+   disorganized and time-consuming.\
+\
+ProjectCollab addresses these problems by providing a centralized\
+platform for project discovery, recruitment, and collaboration.\
+\
+\
+3. PROJECT OBJECTIVES\
+---------------------\
+\
+The primary objectives are:\
+\
+1. Provide a centralized platform for college students to discover\
+   and create projects.\
+\
+2. Help students find teammates based on skills and interests.\
+\
+3. Allow project owners to publish project requirements and recruit\
+   suitable collaborators.\
+\
+4. Implement an application management system with accept and\
+   reject functionality.\
+\
+5. Help students find partners for mini-projects, major projects,\
+   research, and competitions.\
+\
+6. Provide student profiles displaying skills, interests, and\
+   previous projects.\
+\
+7. Provide basic collaboration tools for accepted team members.\
+\
+8. Encourage practical learning and interdisciplinary collaboration.\
+\
+9. Build a secure, responsive, and maintainable web application.\
+\
+10. Create a foundation for future recommendation and team-matching\
+    functionality.\
+\
+\
+4. TARGET USERS\
+---------------\
+\
+A. Students with Project Ideas\
+\
+Students who have an idea but need additional team members.\
+\
+B. Students Looking for Projects\
+\
+Students who want to join projects based on their interests,\
+skills, and learning goals.\
+\
+C. Students Looking for Major Project Partners\
+\
+Students who need partners for university academic projects.\
+\
+D. Students Looking for Practical Experience\
+\
+Students who want to improve their skills by contributing to\
+projects outside their existing friend circle.\
+\
+E. Platform Administrators\
+\
+Authorized administrators responsible for managing users,\
+moderating content, and maintaining the college community.\
+\
+\
+5. TECHNOLOGY STACK\
+-------------------\
+\
+FRONTEND\
+\
+1. React.js\
+   Used to build interactive user interfaces and reusable components.\
+\
+2. JavaScript\
+   Used for frontend functionality, event handling, and API requests.\
+\
+3. HTML5\
+   Provides the structure of web pages.\
+\
+4. CSS3\
+   Used for layouts, styling, responsiveness, and animations.\
+\
+5. Tailwind CSS\
+   Optional utility-first CSS framework for consistent UI styling.\
+\
+6. React Router\
+   Used for navigation between pages.\
+\
+7. Axios or Fetch API\
+   Used to communicate with the backend.\
+\
+BACKEND\
+\
+1. Node.js\
+   JavaScript runtime used to execute server-side code.\
+\
+2. Express.js\
+   Backend framework used to create REST APIs and process requests.\
+\
+3. JavaScript\
+   Used to implement business logic, authentication middleware,\
+   validation, and application workflows.\
+\
+DATABASE\
+\
+1. PostgreSQL\
+   Relational database used to store users, projects, applications,\
+   team members, tasks, and notifications.\
+\
+2. pg\
+   Node.js PostgreSQL client for database connectivity.\
+\
+AUTHENTICATION AND SECURITY\
+\
+1. bcrypt\
+   Used to hash passwords if password authentication is implemented\
+   directly in the backend.\
+\
+2. JSON Web Tokens (JWT)\
+   Optional approach for managing authenticated API sessions.\
+\
+3. Express middleware\
+   Used for authentication, authorization, and request validation.\
+\
+4. Helmet\
+   Helps configure security-related HTTP headers.\
+\
+5. Rate limiting\
+   Helps reduce abuse of authentication and other sensitive endpoints.\
+\
+DEVELOPMENT TOOLS\
+\
+1. Visual Studio Code\
+   Code editor.\
+\
+2. Git\
+   Version control.\
+\
+3. GitHub\
+   Source code repository and collaboration.\
+\
+4. Postman\
+   API testing.\
+\
+5. npm\
+   Package management.\
+\
+DEPLOYMENT\
+\
+1. Vercel\
+   Suitable for deploying the React frontend.\
+\
+2. A Node.js-compatible hosting service\
+   Used to deploy the Express backend.\
+\
+3. A managed PostgreSQL service\
+   Used to host the production database.\
+\
+The frontend, backend, and database may be hosted separately.\
+\
+IMPORTANT:\
+Use environment variables for database credentials, authentication\
+secrets, and other sensitive configuration.\
+\
+Never commit secrets or production credentials to GitHub.\
+\
+\
+6. SYSTEM ARCHITECTURE\
+----------------------\
+\
+The application will follow a client-server architecture.\
+\
+USER\
+ |\
+ v\
+REACT FRONTEND\
+ |\
+ | HTTP Requests / REST API\
+ v\
+NODE.JS + EXPRESS BACKEND\
+ |\
+ | Authentication, Authorization,\
+ | Validation, Business Logic\
+ v\
+POSTGRESQL DATABASE\
+ |\
+ v\
+STORED APPLICATION DATA\
+\
+\
+FRONTEND RESPONSIBILITIES\
+\
+- Display pages and dashboards.\
+- Collect user input.\
+- Display projects and profiles.\
+- Submit applications.\
+- Show application statuses.\
+- Display notifications.\
+- Provide task and team interfaces.\
+\
+BACKEND RESPONSIBILITIES\
+\
+- Authenticate users.\
+- Verify permissions.\
+- Create and update projects.\
+- Process project applications.\
+- Manage team membership.\
+- Enforce recruitment rules.\
+- Generate notifications.\
+- Validate requests.\
+- Communicate with PostgreSQL.\
+\
+DATABASE RESPONSIBILITIES\
+\
+- Store user information.\
+- Store college and skill information.\
+- Store project listings.\
+- Store applications and their statuses.\
+- Store team membership.\
+- Store tasks and notifications.\
+- Maintain relationships and constraints.\
+\
+\
+7. CORE MODULES\
+----------------\
+\
+MODULE 1: AUTHENTICATION AND AUTHORIZATION\
+\
+Purpose:\
+Provide secure access to the platform.\
+\
+Features:\
+\
+- Student registration.\
+- Student login.\
+- Logout.\
+- Password hashing.\
+- Forgot-password functionality.\
+- Email verification.\
+- Protected pages.\
+- Role-based access control.\
+- College membership validation.\
+\
+User roles:\
+\
+1. Student\
+2. Platform Administrator\
+\
+Project owners receive additional permissions for the projects\
+they manage.\
+\
+College Verification:\
+\
+The initial release should support one college.\
+\
+Students should be verified using an appropriate college email\
+domain or an administrator-approved verification process.\
+\
+Do not assume that every college provides student email addresses.\
+\
+\
+MODULE 2: STUDENT PROFILE MANAGEMENT\
+\
+Purpose:\
+Help students showcase their skills and interests.\
+\
+Features:\
+\
+- Student name.\
+- Profile picture.\
+- College.\
+- Department or branch.\
+- Academic year.\
+- Short biography.\
+- Technical skills.\
+- Areas of interest.\
+- Experience level.\
+- GitHub profile.\
+- Portfolio URL.\
+- Projects created.\
+- Projects joined.\
+- Availability.\
+- Preferred project categories.\
+\
+Students should be able to edit their profiles.\
+\
+Private information should not be publicly exposed unnecessarily.\
+\
+\
+MODULE 3: PROJECT CREATION AND MANAGEMENT\
+\
+Purpose:\
+Allow students to publish project ideas and recruit teammates.\
+\
+Features:\
+\
+- Create a project.\
+- Edit project details.\
+- View project details.\
+- Delete or archive a project.\
+- Specify required skills.\
+- Define team size.\
+- Specify open roles.\
+- Set recruitment deadlines.\
+- Define project duration.\
+- Select project category.\
+- Close recruitment.\
+- Manage team membership.\
+\
+Project fields:\
+\
+- Project title.\
+- Short description.\
+- Detailed description.\
+- Problem statement.\
+- Proposed solution.\
+- Technology stack.\
+- Required skills.\
+- Project category.\
+- Project type.\
+- Owner.\
+- Team size.\
+- Current member count.\
+- Available roles.\
+- Recruitment deadline.\
+- Project status.\
+- Creation date.\
+\
+Project categories may include:\
+\
+- Artificial Intelligence and Machine Learning.\
+- Web Development.\
+- Mobile Application Development.\
+- Cybersecurity.\
+- Data Science.\
+- Internet of Things.\
+- Robotics.\
+- Blockchain.\
+- Research.\
+- Other.\
+\
+Project types may include:\
+\
+- Mini-project.\
+- Major academic project.\
+- Personal project.\
+- Research project.\
+- Hackathon project.\
+\
+Project statuses:\
+\
+- Recruiting.\
+- Recruitment Closed.\
+- In Progress.\
+- Completed.\
+- Archived.\
+\
+\
+MODULE 4: PROJECT DISCOVERY AND SEARCH\
+\
+Purpose:\
+Help students discover relevant projects.\
+\
+Features:\
+\
+- Browse all accessible projects.\
+- Search by title.\
+- Search by description.\
+- Filter by category.\
+- Filter by technology.\
+- Filter by required skills.\
+- Filter by project type.\
+- Filter by academic year where appropriate.\
+- Sort by newest.\
+- Sort by closing date.\
+- Display available team positions.\
+- Display recruitment status.\
+- Bookmark projects.\
+- Show recommended projects.\
+\
+Search results should be paginated when necessary.\
+\
+Students should not be able to access projects belonging to\
+unauthorized college communities.\
+\
+\
+MODULE 5: APPLICATION AND RECRUITMENT MANAGEMENT\
+\
+Purpose:\
+Manage the process of recruiting team members.\
+\
+Application workflow:\
+\
+1. Student discovers a project.\
+2. Student opens its details.\
+3. Student selects an available role.\
+4. Student submits an application.\
+5. Project owner receives a notification.\
+6. Project owner reviews the application.\
+7. Project owner accepts or rejects it.\
+8. The applicant receives the decision.\
+9. Accepted applicants become team members.\
+\
+Application information:\
+\
+- Applicant.\
+- Project.\
+- Requested role.\
+- Introduction message.\
+- Relevant skills.\
+- Application date.\
+- Application status.\
+\
+Application statuses:\
+\
+- Pending.\
+- Accepted.\
+- Rejected.\
+- Withdrawn.\
+\
+Features:\
+\
+- Apply to a project.\
+- View submitted applications.\
+- Withdraw an application.\
+- View application status.\
+- Review applicants.\
+- View applicant profiles.\
+- Accept applicants.\
+- Reject applicants.\
+- Close applications.\
+- Prevent duplicate active applications.\
+- Enforce team capacity.\
+\
+Only authorized project owners or designated managers should be\
+able to make recruitment decisions.\
+\
+Application acceptance and team membership updates must be handled\
+safely by the backend or database.\
+\
+\
+MODULE 6: TEAM MANAGEMENT\
+\
+Purpose:\
+Manage students after they join a project.\
+\
+Features:\
+\
+- Display team members.\
+- Display team roles.\
+- View team details.\
+- Assign team responsibilities.\
+- Allow members to leave a team.\
+- Allow authorized owners to remove members.\
+- Transfer project ownership where appropriate.\
+- Display team capacity.\
+- Display project progress.\
+\
+The project owner should automatically become a team member.\
+\
+The application must define what happens when the owner leaves\
+or transfers ownership.\
+\
+\
+MODULE 7: TEAM COLLABORATION WORKSPACE\
+\
+Purpose:\
+Help accepted members coordinate their work.\
+\
+Features:\
+\
+- Project task board.\
+- Create tasks.\
+- Assign tasks to members.\
+- Set task deadlines.\
+- Update task status.\
+- Add task descriptions.\
+- Post team announcements.\
+- Share useful links.\
+- Share project resources.\
+- Display project milestones.\
+- Track basic project progress.\
+\
+Task statuses:\
+\
+- To Do.\
+- In Progress.\
+- Completed.\
+\
+Only authorized project members should be able to access the\
+project's private collaboration workspace.\
+\
+Real-time chat is optional and can be introduced in a later release.\
+\
+\
+MODULE 8: NOTIFICATION SYSTEM\
+\
+Purpose:\
+Inform students about important activities.\
+\
+Notification events:\
+\
+- New project application.\
+- Application accepted.\
+- Application rejected.\
+- New team member.\
+- Team membership change.\
+- New task assignment.\
+- Upcoming task deadline.\
+- New team announcement.\
+- Recruitment status change.\
+\
+Initial implementation:\
+\
+- In-app notifications.\
+- Read and unread status.\
+- Notification timestamps.\
+- Notification navigation.\
+\
+Email notifications can be added later.\
+\
+\
+MODULE 9: BOOKMARKS AND SAVED PROJECTS\
+\
+Purpose:\
+Allow students to save interesting opportunities.\
+\
+Features:\
+\
+- Bookmark a project.\
+- Remove a bookmark.\
+- View saved projects.\
+- Open bookmarked project details.\
+- Identify projects that are no longer recruiting.\
+\
+Each student should be able to manage only their own bookmarks.\
+\
+\
+MODULE 10: ADMINISTRATION AND MODERATION\
+\
+Purpose:\
+Maintain a safe and organized student community.\
+\
+Features:\
+\
+- View users.\
+- Review student verification.\
+- Suspend accounts when justified.\
+- Review reported projects.\
+- Review reported users.\
+- Remove inappropriate listings.\
+- Manage project categories.\
+- View platform statistics.\
+- Handle moderation requests.\
+\
+Administrative actions should be restricted to authorized\
+administrators and recorded where appropriate.\
+\
+Project owners should not automatically receive platform-wide\
+administrative privileges.\
+\
+\
+8. OPTIONAL ADVANCED FEATURES\
+-----------------------------\
+\
+These features can be introduced after the MVP is functional.\
+\
+A. SMART PROJECT RECOMMENDATIONS\
+\
+Recommend projects based on:\
+\
+- Student skills.\
+- Student interests.\
+- Preferred project type.\
+- Required skills.\
+- Availability.\
+- Recruitment status.\
+\
+The first implementation can use a rule-based matching algorithm.\
+\
+Machine learning is not required for the initial release.\
+\
+\
+B. TEAM SKILL GAP ANALYSIS\
+\
+Compare required project skills with the skills represented by\
+the existing team.\
+\
+Example:\
+\
+Required:\
+- Python.\
+- Machine Learning.\
+- React.\
+- PostgreSQL.\
+\
+Current team:\
+- Python.\
+- Machine Learning.\
+- PostgreSQL.\
+\
+The platform can highlight the need for a React developer.\
+\
+This feature can help project owners recruit complementary\
+team members.\
+\
+\
+C. FIND A PROJECT PARTNER\
+\
+Allow students to publish a partner request even when they do not\
+have a fully developed project idea.\
+\
+Fields:\
+\
+- Project type.\
+- Academic year.\
+- Interests.\
+- Preferred skills.\
+- Number of partners needed.\
+- Availability.\
+- Short introduction.\
+\
+This feature directly addresses students who need partners for\
+major university projects.\
+\
+\
+D. PROJECT SHOWCASE\
+\
+Allow completed teams to publish:\
+\
+- Project description.\
+- Screenshots.\
+- Demo URL.\
+- GitHub repository.\
+- Technologies used.\
+- Team members.\
+- Key achievements.\
+\
+Students can use completed projects as portfolio evidence.\
+\
+\
+E. HACKATHON TEAM FORMATION\
+\
+Allow students to recruit teammates for hackathons and competitions.\
+\
+Possible fields:\
+\
+- Event name.\
+- Registration deadline.\
+- Required skills.\
+- Available roles.\
+- Team size.\
+- Event URL.\
+\
+\
+F. TEAM COMPATIBILITY\
+\
+Suggest candidates who fill missing technical roles.\
+\
+The system should present recommendations as guidance rather\
+than guaranteeing that students will work well together.\
+\
+\
+9. DATABASE DESIGN\
+------------------\
+\
+The database will use PostgreSQL.\
+\
+Recommended tables:\
+\
+TABLE 1: colleges\
+\
+Fields:\
+- id\
+- name\
+- email_domain\
+- created_at\
+\
+TABLE 2: users\
+\
+Fields:\
+- id\
+- college_id\
+- name\
+- email\
+- password_hash\
+- department\
+- academic_year\
+- bio\
+- profile_picture_url\
+- github_url\
+- portfolio_url\
+- account_status\
+- created_at\
+- updated_at\
+\
+Authentication identifiers and password storage should be designed\
+according to the selected authentication implementation.\
+\
+TABLE 3: skills\
+\
+Fields:\
+- id\
+- skill_name\
+\
+TABLE 4: user_skills\
+\
+Fields:\
+- user_id\
+- skill_id\
+- proficiency_level\
+\
+TABLE 5: projects\
+\
+Fields:\
+- id\
+- college_id\
+- owner_id\
+- title\
+- short_description\
+- description\
+- problem_statement\
+- category\
+- project_type\
+- team_size\
+- recruitment_deadline\
+- status\
+- created_at\
+- updated_at\
+\
+TABLE 6: project_skills\
+\
+Fields:\
+- project_id\
+- skill_id\
+- required_level\
+\
+TABLE 7: project_roles\
+\
+Fields:\
+- id\
+- project_id\
+- role_name\
+- description\
+- positions_available\
+\
+TABLE 8: applications\
+\
+Fields:\
+- id\
+- project_id\
+- applicant_id\
+- project_role_id\
+- introduction_message\
+- status\
+- created_at\
+- updated_at\
+\
+TABLE 9: team_members\
+\
+Fields:\
+- id\
+- project_id\
+- user_id\
+- role\
+- joined_at\
+\
+TABLE 10: tasks\
+\
+Fields:\
+- id\
+- project_id\
+- assigned_to\
+- title\
+- description\
+- due_date\
+- status\
+- created_at\
+- updated_at\
+\
+TABLE 11: notifications\
+\
+Fields:\
+- id\
+- user_id\
+- title\
+- message\
+- notification_type\
+- related_project_id\
+- is_read\
+- created_at\
+\
+TABLE 12: bookmarks\
+\
+Fields:\
+- user_id\
+- project_id\
+- created_at\
+\
+TABLE 13: reports\
+\
+Fields:\
+- id\
+- reporter_id\
+- reported_user_id\
+- reported_project_id\
+- reason\
+- status\
+- created_at\
+\
+Additional tables can be introduced for announcements, comments,\
+milestones, and project showcases.\
+\
+DATABASE DESIGN REQUIREMENTS\
+\
+- Use primary keys and foreign keys.\
+- Use appropriate unique constraints.\
+- Index frequently searched columns.\
+- Validate required fields.\
+- Prevent duplicate active applications.\
+- Enforce team capacity safely.\
+- Ensure college access restrictions.\
+- Use transactions for operations involving multiple records.\
+- Define appropriate deletion and archival rules.\
+\
+A student should not be able to join a project twice.\
+\
+A project must not exceed its maximum team size.\
+\
+The owner should be represented in team membership.\
+\
+The database must preserve the relationship between projects,\
+applications, and accepted team members.\
+\
+\
+10. USER WORKFLOWS\
+------------------\
+\
+WORKFLOW A: STUDENT REGISTRATION\
+\
+1. Student opens ProjectCollab.\
+2. Student registers.\
+3. Student verifies their email.\
+4. Student completes their profile.\
+5. Student adds skills and interests.\
+6. Student accesses the project discovery page.\
+\
+\
+WORKFLOW B: CREATE A PROJECT\
+\
+1. Student selects Create Project.\
+2. Student enters project details.\
+3. Student specifies required skills.\
+4. Student specifies roles and team size.\
+5. Student publishes the project.\
+6. The project appears in discovery results.\
+7. Other students can apply.\
+\
+\
+WORKFLOW C: APPLY TO A PROJECT\
+\
+1. Student browses projects.\
+2. Student selects a suitable project.\
+3. Student reads the requirements.\
+4. Student selects an available role.\
+5. Student submits an introduction message.\
+6. The application is stored.\
+7. The project owner receives a notification.\
+8. The student can track the application status.\
+\
+\
+WORKFLOW D: ACCEPT AN APPLICANT\
+\
+1. Project owner opens the recruitment dashboard.\
+2. Owner reviews the applicant's profile.\
+3. Owner checks the requested role.\
+4. Owner accepts or rejects the application.\
+5. Backend validates the decision and team capacity.\
+6. If accepted, team membership is created.\
+7. Application status is updated.\
+8. Applicant receives a notification.\
+9. Recruitment closes when appropriate.\
+\
+\
+WORKFLOW E: TEAM COLLABORATION\
+\
+1. Accepted student opens My Teams.\
+2. Student opens the project workspace.\
+3. Team members view announcements.\
+4. Members create and assign tasks.\
+5. Members update task progress.\
+6. The team completes the project.\
+7. The project owner marks the project completed.\
+8. The team can publish a project showcase.\
+\
+\
+11. API DESIGN\
+--------------\
+\
+The backend will expose REST APIs.\
+\
+AUTHENTICATION\
+\
+POST /api/auth/register\
+POST /api/auth/login\
+POST /api/auth/logout\
+GET  /api/auth/me\
+\
+STUDENT PROFILES\
+\
+GET   /api/users/:id\
+PATCH /api/users/me\
+GET   /api/users/me/projects\
+GET   /api/users/me/applications\
+\
+PROJECTS\
+\
+GET    /api/projects\
+POST   /api/projects\
+GET    /api/projects/:id\
+PATCH  /api/projects/:id\
+DELETE /api/projects/:id\
+\
+APPLICATIONS\
+\
+POST  /api/projects/:id/applications\
+GET   /api/projects/:id/applications\
+PATCH /api/applications/:id/status\
+GET   /api/applications/:id\
+PATCH /api/applications/:id/withdraw\
+\
+TEAM MANAGEMENT\
+\
+GET    /api/projects/:id/team\
+DELETE /api/projects/:id/team/:userId\
+\
+TASKS\
+\
+GET    /api/projects/:id/tasks\
+POST   /api/projects/:id/tasks\
+PATCH  /api/tasks/:id\
+DELETE /api/tasks/:id\
+\
+BOOKMARKS\
+\
+GET    /api/users/me/bookmarks\
+POST   /api/projects/:id/bookmark\
+DELETE /api/projects/:id/bookmark\
+\
+NOTIFICATIONS\
+\
+GET   /api/notifications\
+PATCH /api/notifications/:id/read\
+\
+ADMINISTRATION\
+\
+GET   /api/admin/users\
+GET   /api/admin/reports\
+PATCH /api/admin/reports/:id\
+PATCH /api/admin/users/:id/status\
+\
+These endpoints are proposed examples. Their request formats,\
+response formats, and authorization rules must be defined during\
+implementation.\
+\
+All sensitive operations must enforce permissions on the backend.\
+\
+\
+12. SECURITY REQUIREMENTS\
+-------------------------\
+\
+1. Hash passwords securely if authentication is implemented locally.\
+\
+2. Validate all incoming data.\
+\
+3. Use parameterized database queries.\
+\
+4. Protect private routes and API endpoints.\
+\
+5. Enforce role-based authorization.\
+\
+6. Restrict access to projects based on college membership.\
+\
+7. Prevent unauthorized application decisions.\
+\
+8. Prevent duplicate applications.\
+\
+9. Enforce team size limits transactionally.\
+\
+10. Rate-limit sensitive endpoints.\
+\
+11. Store secrets in environment variables.\
+\
+12. Do not expose private database credentials to the frontend.\
+\
+13. Avoid exposing private student information.\
+\
+14. Implement secure session or token handling.\
+\
+15. Apply database constraints and access-control rules.\
+\
+16. Validate uploaded files if file uploads are supported.\
+\
+17. Implement reporting and moderation capabilities.\
+\
+18. Test authorization by attempting to access resources belonging\
+    to other users.\
+\
+Security must be enforced on the server, not only through frontend\
+visibility controls.\
+\
+\
+13. USER INTERFACE REQUIREMENTS\
+-------------------------------\
+\
+The website should have a modern, clean, responsive interface.\
+\
+DESIGN PRINCIPLES\
+\
+- Simple navigation.\
+- Clear project cards.\
+- Consistent typography.\
+- Readable forms.\
+- Responsive layouts.\
+- Clear application statuses.\
+- Accessible buttons and form controls.\
+- Loading indicators.\
+- Error messages.\
+- Empty states.\
+- Confirmation dialogs for destructive actions.\
+\
+PRIMARY PAGES\
+\
+1. Landing Page\
+2. Register Page\
+3. Login Page\
+4. Student Onboarding\
+5. Discover Projects\
+6. Project Details\
+7. Create Project\
+8. Edit Project\
+9. Student Profile\
+10. Edit Profile\
+11. My Projects\
+12. Recruitment Dashboard\
+13. My Applications\
+14. My Teams\
+15. Team Workspace\
+16. Task Management\
+17. Notifications\
+18. Saved Projects\
+19. Admin Dashboard\
+20. Project Showcase\
+\
+Navigation and page access should depend on authentication\
+and the user's permissions.\
+\
+\
+14. MVP SCOPE\
+-------------\
+\
+The Minimum Viable Product should include the following features.\
+\
+1. Student registration and login.\
+2. College membership validation.\
+3. Student profile management.\
+4. Project creation.\
+5. Project browsing and search.\
+6. Project details.\
+7. Project application submission.\
+8. Application status tracking.\
+9. Application acceptance and rejection.\
+10. Team membership management.\
+11. Basic in-app notifications.\
+12. Basic administrative moderation.\
+13. Responsive user interface.\
+14. Database security.\
+15. Deployment.\
+\
+The MVP should prove that students can successfully find projects,\
+apply for positions, and form teams.\
+\
+Do not attempt to implement every advanced feature immediately.\
+\
+\
+15. FUTURE ENHANCEMENTS\
+-----------------------\
+\
+Possible future improvements:\
+\
+1. Rule-based project recommendations.\
+2. Team skill gap analysis.\
+3. Smart team matching.\
+4. Find-a-project-partner functionality.\
+5. Real-time team chat.\
+6. Email notifications.\
+7. Project showcase and portfolio.\
+8. Hackathon recruitment.\
+9. Project milestones and progress analytics.\
+10. Calendar integration.\
+11. File sharing.\
+12. Project reviews.\
+13. Multiple college support.\
+14. Mobile application.\
+15. AI-assisted project recommendations.\
+\
+These enhancements should be added only after the main application\
+is stable and secure.\
+\
+\
+16. DEVELOPMENT ROADMAP\
+-----------------------\
+\
+PHASE 1: PLANNING AND SETUP\
+\
+- Finalize requirements.\
+- Design the UI wireframes.\
+- Design the database schema.\
+- Create the GitHub repository.\
+- Set up the React frontend.\
+- Set up the Node.js backend.\
+- Connect PostgreSQL.\
+- Configure environment variables.\
+\
+PHASE 2: AUTHENTICATION\
+\
+- Implement registration.\
+- Implement login and logout.\
+- Add password hashing.\
+- Implement session or token management.\
+- Add student profiles.\
+- Implement college verification.\
+- Protect private routes.\
+\
+PHASE 3: PROJECT MANAGEMENT\
+\
+- Implement project creation.\
+- Implement project editing.\
+- Implement project deletion or archival.\
+- Implement project listings.\
+- Implement search and filters.\
+- Implement project details.\
+- Add project categories and required skills.\
+\
+PHASE 4: RECRUITMENT\
+\
+- Implement application submission.\
+- Implement application status tracking.\
+- Implement applicant review.\
+- Implement acceptance and rejection.\
+- Implement team membership.\
+- Enforce team capacity.\
+- Add notifications.\
+\
+PHASE 5: COLLABORATION\
+\
+- Implement team workspaces.\
+- Implement task management.\
+- Implement announcements.\
+- Implement shared resource links.\
+- Add project progress indicators.\
+\
+PHASE 6: ADMINISTRATION AND SECURITY\
+\
+- Implement the admin dashboard.\
+- Implement user and project moderation.\
+- Add reporting functionality.\
+- Test permissions.\
+- Test database constraints.\
+- Test invalid inputs.\
+- Test application capacity limits.\
+\
+PHASE 7: TESTING AND DEPLOYMENT\
+\
+- Test all major workflows.\
+- Fix frontend and backend bugs.\
+- Test responsive layouts.\
+- Deploy the frontend.\
+- Deploy the backend.\
+- Configure the production database.\
+- Configure environment variables.\
+- Perform end-to-end testing.\
+- Test with a small group of college students.\
+- Collect feedback and improve the product.\
+\
+PHASE 8: ADVANCED FEATURES\
+\
+- Add project recommendations.\
+- Add skill gap analysis.\
+- Add partner-finding functionality.\
+- Add project showcase.\
+- Add optional real-time collaboration features.\
+\
+\
+17. TESTING REQUIREMENTS\
+------------------------\
+\
+The application should be tested for:\
+\
+AUTHENTICATION\
+\
+- Valid registration.\
+- Invalid registration.\
+- Valid login.\
+- Invalid login.\
+- Unauthorized page access.\
+\
+PROJECT MANAGEMENT\
+\
+- Create a project.\
+- Edit a project.\
+- Delete or archive a project.\
+- Search for a project.\
+- Filter project results.\
+\
+APPLICATIONS\
+\
+- Submit a valid application.\
+- Prevent duplicate applications.\
+- Reject applications to closed projects.\
+- Accept an application.\
+- Reject an application.\
+- Prevent unauthorized application decisions.\
+- Prevent team capacity from being exceeded.\
+\
+TEAM MANAGEMENT\
+\
+- Add accepted applicants to a team.\
+- Prevent duplicate team membership.\
+- Restrict workspace access.\
+- Handle member removal and departure.\
+\
+SECURITY\
+\
+- Validate API permissions.\
+- Validate database access rules.\
+- Test unauthorized resource access.\
+- Validate user input.\
+- Test rate limits on sensitive endpoints.\
+\
+INTERFACE\
+\
+- Test desktop layouts.\
+- Test mobile layouts.\
+- Test loading states.\
+- Test empty states.\
+- Test error handling.\
+\
+\
+18. EXPECTED OUTCOMES\
+---------------------\
+\
+The expected outcomes of ProjectCollab are:\
+\
+1. A functional college-specific collaboration platform.\
+\
+2. A centralized directory of student project opportunities.\
+\
+3. A structured project recruitment process.\
+\
+4. A system for finding project partners.\
+\
+5. Student profiles containing skills and interests.\
+\
+6. Basic team collaboration tools.\
+\
+7. Better visibility into student projects and opportunities.\
+\
+8. A foundation for future intelligent team recommendations.\
+\
+9. Practical experience with full-stack web development,\
+   databases, API design, authentication, and deployment.\
+\
+\
+19. PROJECT SUCCESS CRITERIA\
+----------------------------\
+\
+The initial release will be considered successful when:\
+\
+- Students can register and access the platform.\
+- Students can create and publish projects.\
+- Other students can discover and search for projects.\
+- Students can submit applications.\
+- Project owners can accept or reject applicants.\
+- Accepted applicants become team members.\
+- Team capacity is enforced.\
+- Users cannot perform unauthorized actions.\
+- Project owners can manage recruitment.\
+- Students can access their own applications and teams.\
+- The application works on desktop and mobile browsers.\
+- The deployed application works reliably with real test users.\
+\
+\
+20. FINAL PROJECT SUMMARY\
+-------------------------\
+\
+ProjectCollab is a full-stack web application designed to help\
+college students discover project opportunities, find teammates,\
+and collaborate on academic and personal projects.\
+\
+The platform addresses the problem of students being unable to\
+find suitable collaborators within their existing friend circles.\
+\
+Using React.js, JavaScript, Node.js, Express.js, and PostgreSQL,\
+the application will provide student profiles, project listings,\
+search and discovery, application management, team formation,\
+notifications, and basic collaboration tools.\
+\
+The initial release will focus on a single college and the core\
+project recruitment workflow.\
+\
+Future releases may introduce intelligent recommendations,\
+team skill gap analysis, partner discovery, project portfolios,\
+and additional collaboration features.\
+\
+The ultimate goal is to make finding the right project and the\
+right teammates easier for every student.\
+\
+============================================================\
+                    END OF PROJECT FILE\
+============================================================}

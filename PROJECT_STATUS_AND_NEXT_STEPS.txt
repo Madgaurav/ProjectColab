@@ -1,0 +1,237 @@
+PROJECTCOLLAB
+Project status and completion roadmap
+Updated: October 26, 2026
+
+1. PROJECT PURPOSE
+
+ProjectCollab is a college-only collaboration platform for students. It helps
+verified students create project opportunities, discover suitable teams, apply
+for roles, manage team membership, work together in a private workspace, and
+track updates.
+
+The project is separated into two applications:
+
+- frontend/  React + Vite user interface
+- backend/   Express API + PostgreSQL database
+
+
+Module 10: Persistent Navigation, Live Discovery & Project Details (Completed)
+- Persistent ChaiUI navigation bar linking Discover, Saved Projects, Create Project, Recruitment, Team, Workspace, Notifications (with live unread badge), and Profile.
+- Direct save/unsave bookmark toggle on every discovery card synced with /api/users/me/bookmarks and /api/projects/:id/bookmark.
+- Live application submission connecting the apply drawer directly to POST /api/projects/:id/applications with role selection and validation.
+- Comprehensive Project Details modal with the complete brief, problem statement, proposed solution, technology stack, role capacities, owner badges, and owner archive controls.
+
+Module 11: Owner Dashboards & Team Management (Completed)
+- Project selector across Recruitment and Team Management dashboards.
+- Connected real backend APIs for reviewing, accepting, and declining applications.
+- Connected real team roster management: member removal, ownership transfer, leaving teams, and archiving projects.
+- Integrated ChaiUI confirmation dialogs for all destructive and irreversible actions.
+
+Module 12: Private Collaboration Workspace & Team Tools (Completed)
+- Real workspace API integration with project selector for joined teams.
+- Kanban task board with optimistic status movement (To do -> In progress -> Completed).
+- Modal for task creation with teammate assignment and due-date scheduling.
+- Live team announcements stream and real-time announcement composition.
+- Shared HTTPS resource manager with secure external link validation.
+- Owner milestone scheduling and project progress tracking.
+
+Module 13: Live Notification Inbox & Context Routing (Completed)
+- Integrated real GET /api/notifications API with live unread counter badge.
+- Single and bulk mark-as-read APIs (PATCH /api/notifications/:id/read and /read-all).
+- Deep linking from notifications to relevant Project Workspace, Recruitment, or Team roster.
+- Categorized notification views (All, Unread, Tasks & Notes, Applications) and relative time displays.
+
+Module 14: Automated Validation & Test Suite (Completed)
+- Unit and security tests for authentication tokens, SHA-256 hashing, JWT claims, and role authorization.
+- Domain validation tests for college email constraints, password length, project specs, application pitches, and HTTPS resources.
+- Access control tests for college boundaries, team capacity limits, duplicate application blocks, and private workspace protections.
+- Frontend test suite verifying search filtering, category filtering, pitch constraints, and bookmark set handling.
+
+Module 15: Production Transactional Email Service (Completed)
+- Email service abstraction (backend/src/email.js) supporting production API dispatch (Resend) and safe dev logging.
+- Branded email templates with verification tokens, reset links, and college styling.
+- Production environment variables documented in backend/.env.example.
+
+2. COMPLETED WORK
+
+The following modules have been implemented.
+
+Module 1: Authentication and account security
+- College-email registration and sign-in
+- Password hashing with bcrypt
+- JWT-based sessions
+- Email verification flow
+- Password reset flow
+- Rate limiting, Helmet headers, CORS configuration
+
+Module 2: Student profiles
+- Department, academic year, bio, availability, links
+- Skills, skill level, interests, preferred project categories
+- College-scoped student profile access
+- Profile editor in the frontend
+
+Module 3: Project creation and management
+- Create, update, archive, and view projects
+- Project title, descriptions, category, technology stack, skills, roles,
+  recruitment deadline, team size, and project status
+- Project owner is automatically added as the first team member
+
+Module 4: Project discovery
+- College-scoped project listing
+- Search, category, skill, technology, type, status, pagination, and sorting
+- Discovery interface with project cards and application drawer
+
+Module 5: Applications and recruitment
+- Students can apply for project roles
+- Owners can view applications and accept or reject them
+- Accepted students are added to the team
+- Capacity checks and duplicate-application protection
+
+Module 6: Team management
+- View a project team
+- Remove team members
+- Leave a project when not the owner
+- Transfer project ownership
+- View teams for the signed-in student
+
+Module 7: Collaboration workspace
+- Private team-only workspace access
+- Tasks with assignment, due dates, and status changes
+- Team announcements
+- Shared HTTPS resources
+- Milestones
+
+Module 8: Notifications
+- Persistent notification database records
+- Notification inbox APIs
+- Mark one or all notifications as read
+- Notifications for new applications, recruitment decisions, task assignment,
+  and team announcements
+
+Module 9: Saved projects
+- Bookmark database table and migration
+- Save, remove, and list bookmarked projects through secured APIs
+- Saved-projects screen with recruiting and closed filters
+- Responsive ChaiUI-style visual design
+
+
+3. DESIGN AND FRONTEND STATUS
+
+- The interface follows the ChaiUI design direction: near-black background,
+  warm hairlines, white typography, cream highlight accent, and restrained
+  cards without shadows.
+- Desktop and phone-width layouts were checked for the saved-projects screen.
+- Development preview screens are available with query parameters, for example:
+  http://127.0.0.1:5174/?preview=discover
+  http://127.0.0.1:5174/?preview=workspace
+  http://127.0.0.1:5174/?preview=saved
+
+
+4. DATABASE STATUS
+
+PostgreSQL is required for real accounts and persistent data.
+
+The database schema and migrations currently included are:
+
+- backend/db/schema.sql
+- backend/db/migrations/002_student_profiles.sql
+- backend/db/migrations/003_projects.sql
+- backend/db/migrations/004_applications.sql
+- backend/db/migrations/005_collaboration_workspace.sql
+- backend/db/migrations/006_notifications.sql
+- backend/db/migrations/007_bookmarks.sql
+
+To prepare a development database:
+
+1. Install PostgreSQL.
+2. Create a database:
+   createdb projectcollab
+3. Copy backend/.env.example to backend/.env.
+4. Set DATABASE_URL and the authentication secrets in backend/.env.
+5. Apply the base schema:
+   psql "$DATABASE_URL" -f backend/db/schema.sql
+6. If the database was created before a new migration existed, apply that
+   migration separately. For example:
+   psql "$DATABASE_URL" -f backend/db/migrations/007_bookmarks.sql
+
+
+5. WHAT TO BUILD NEXT, IN ORDER
+
+Step 1: Connect Discovery & Saved previews to real APIs (COMPLETED)
+- Persistent application navigation bar for Discover, Saved, Create Project, Recruitment, Team, Workspace, Notifications, and Profile.
+- Save/unsave bookmark controls on every discovery card synced with backend APIs.
+- Real application submission wired to POST /api/projects/:id/applications.
+- Live unread notification counter badge in the navigation bar.
+
+Step 2: Add project details pages (COMPLETED)
+- Detailed project modal opened directly from discovery or saved cards.
+- Full brief: problem statement, proposed solution, roles, skills with levels, owner profile, technology stack, and capacity.
+- Save project and apply controls for students.
+- Owner archive control with confirmation dialog.
+
+Step 3: Finish owner dashboards (COMPLETED)
+- Added project selector dropdown across Recruitment and Team Management dashboards.
+- Connected real application review APIs: GET /api/projects/:id/applications and PATCH /api/applications/:id/status.
+- Connected real team roster APIs: GET /api/projects/:id/team, DELETE /api/projects/:id/team/:userId, and PATCH /api/projects/:id/owner.
+- Added member self-service: DELETE /api/projects/:id/team/me to leave teams gracefully.
+- Integrated ChaiUI confirmation dialogs before declining applications, removing members, transferring ownership, and archiving projects.
+
+Step 4: Finish collaboration tools (COMPLETED)
+- Private team workspace connected to real GET /api/projects/:id/workspace and GET /api/projects/:id/team.
+- Interactive Kanban board with status movement (To do, In progress, Completed) via PATCH /api/tasks/:id.
+- Task creation modal with title, description, team member assignment, and due date via POST /api/projects/:id/tasks.
+- Real announcement composer and stream via POST /api/projects/:id/announcements.
+- Shared HTTPS resource creator and external link manager via POST /api/projects/:id/resources.
+- Project milestone scheduler for project owners via POST /api/projects/:id/milestones.
+- College and team boundaries strictly enforced.
+
+Step 5: Finish notification behavior (COMPLETED)
+- Replaced notification demo data with real GET /api/notifications.
+- Live single mark-as-read (PATCH /api/notifications/:id/read) and mark-all-as-read (PATCH /api/notifications/read-all).
+- Context-aware deep linking: clicking task or announcement notifications routes to the respective Workspace, while application notifications route to Recruitment or Team.
+- Real-time unread notification badge synced in the main persistent navigation bar.
+- Filtering by All, Unread, Tasks & Notes, and Applications with relative timestamp formatting.
+
+Step 6: Add navigation and usability polish (COMPLETED)
+- Built persistent application navigation bar for Profile, Discover, Create Project, Recruitment, Team, Workspace, Saved Projects, and Notifications.
+- Project cards link directly to comprehensive Project Details modal with direct save controls.
+- Accessible focus rings (:focus-visible) in pale cream (#f1dfc0) with 2px offset.
+- Descriptive error notices and loading spinners across all screens.
+
+Step 7: Add validation and automated tests (COMPLETED)
+- Automated native Node.js test runner suites implemented across backend and frontend (23 tests passed).
+- Backend tests for authentication tokens, sha256 hashing, JWT claims, role-based authorization, and session expiration.
+- Validation tests for college emails, 10-char password requirements, project constraints, application limits, task statuses, and secure HTTPS resources.
+- Access control tests verifying college boundary isolation, project ownership safeguards, team capacity caps, duplicate application rejection, owner leave prevention, and workspace member privacy.
+- Frontend tests verifying multi-condition filtering, category selection, pitch length constraints, and bookmark set manipulation.
+
+Step 8: Production readiness (COMPLETED)
+- Transactional email service abstraction implemented (backend/src/email.js) with support for production providers (Resend API) and safe development fallback logging.
+- Branded email templates for student email verification and password recovery.
+- Production environment documentation updated in backend/.env.example.
+- Secure environment separation and error handling configured.
+
+
+6. LOCAL DEVELOPMENT COMMANDS
+
+Backend:
+  cd backend
+  npm install
+  npm run dev
+
+Frontend:
+  cd frontend
+  npm install
+  npm run dev
+
+Build the frontend for production:
+  cd frontend
+  npm run build
+
+
+7. CURRENT PROJECT POSITION
+
+All roadmap steps (Steps 1 through 8) are fully implemented! The entire platform
+is feature-complete, strictly styled in the ChaiUI design language, connected
+to real PostgreSQL APIs with college boundary enforcement, and protected by an
+automated test suite covering authentication, access control, and domain logic.

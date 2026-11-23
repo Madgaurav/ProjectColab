@@ -1,0 +1,1550 @@
+{
+  "colleges": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "name": "MIT Academy of Engineering (MIT AOE)",
+      "email_domain": "mitaoe.ac.in",
+      "created_at": "2026-10-26T18:13:32.302Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Aarav Sharma",
+      "email": "202401100001@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Computer Engineering",
+      "academic_year": 3,
+      "bio": "Passionate about full-stack systems, campus transit, and student developer collaboration.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "Mobile apps",
+        "Hardware & IoT"
+      ],
+      "created_at": "2026-10-26T18:13:32.303Z",
+      "updated_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "name": "Gaurav Dhadge",
+      "email": "202401100139@mitaoe.ac.in",
+      "password_hash": "$2b$12$Brfq6dpQjnWbyu3iMRIDae.ZSUO2bzjtmn0pfMrv8GyCAIsz.hrv.",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "role": "student",
+      "account_status": "active",
+      "department": "",
+      "academic_year": null,
+      "bio": "",
+      "profile_picture_url": "",
+      "github_url": "",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [],
+      "verification_token_hash": null,
+      "verification_expires_at": null,
+      "reset_token_hash": null,
+      "reset_expires_at": null,
+      "created_at": "2026-10-26T18:15:52.257Z",
+      "updated_at": "2026-11-15T13:27:42.787Z"
+    },
+    {
+      "id": "dd22b594-d67f-4b3b-b598-4c4a9b74298e",
+      "name": "New Student",
+      "email": "202401100999@mitaoe.ac.in",
+      "password_hash": "$2b$12$M8HFdzoVPKXzKo3NGeraTuxTAbaguGD4NOiorTzfLuK1Lbbhw3gNW",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "role": "student",
+      "account_status": "active",
+      "department": "",
+      "academic_year": null,
+      "bio": "",
+      "profile_picture_url": "",
+      "github_url": "",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [],
+      "verification_token_hash": "2114c6819a3e367a59af307ab76670354f3ccf05d25d190fc37af47261660c26",
+      "verification_expires_at": "2026-11-15T14:27:34.568Z",
+      "reset_token_hash": null,
+      "reset_expires_at": null,
+      "created_at": "2026-11-15T13:27:34.569Z",
+      "updated_at": "2026-11-15T13:27:34.569Z"
+    },
+    {
+      "id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Ananya Deshmukh",
+      "email": "202401100201@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Electronics & Telecommunication",
+      "academic_year": 3,
+      "bio": "Robotics and embedded systems enthusiast. Building autonomous navigation prototypes.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "AI and ML",
+        "Robotics"
+      ],
+      "created_at": "2026-11-15T13:32:12.837Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Rohan Kulkarni",
+      "email": "202401100202@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Mechanical Engineering",
+      "academic_year": 4,
+      "bio": "Mechatronics designer interested in CAD, automated sorting, and smart campus IoT.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "AI and ML",
+        "Robotics"
+      ],
+      "created_at": "2026-11-15T13:32:12.838Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Tanvi Patil",
+      "email": "202401100203@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Computer Engineering",
+      "academic_year": 3,
+      "bio": "Deep learning researcher exploring vision-language models and educational AI.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "AI and ML",
+        "Robotics"
+      ],
+      "created_at": "2026-11-15T13:32:12.838Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Aditya Joshi",
+      "email": "202401100204@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Information Technology",
+      "academic_year": 2,
+      "bio": "Full stack developer interested in decentralized knowledge networks and peer tools.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "AI and ML",
+        "Robotics"
+      ],
+      "created_at": "2026-11-15T13:32:12.838Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "name": "Pooja Shinde",
+      "email": "202401100205@mitaoe.ac.in",
+      "password_hash": "$2b$12$eX4zX3Xp0O.r8Qo15Gf0z.M8M3a5nOqL4s6t9u2v5w8x1y4z7a0b",
+      "role": "student",
+      "account_status": "active",
+      "department": "Computer Engineering",
+      "academic_year": 4,
+      "bio": "Cybersecurity analyst focusing on network packet inspection and threat detection.",
+      "profile_picture_url": "",
+      "github_url": "https://github.com/mitaoe-student",
+      "portfolio_url": "",
+      "availability": "open",
+      "preferred_categories": [
+        "Web development",
+        "AI and ML",
+        "Robotics"
+      ],
+      "created_at": "2026-11-15T13:32:12.838Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    }
+  ],
+  "skills": [
+    {
+      "id": "s-1",
+      "skill_name": "React"
+    },
+    {
+      "id": "s-2",
+      "skill_name": "Node.js"
+    },
+    {
+      "id": "s-3",
+      "skill_name": "PostgreSQL"
+    },
+    {
+      "id": "s-4",
+      "skill_name": "Leaflet.js"
+    },
+    {
+      "id": "s-5",
+      "skill_name": "Python"
+    },
+    {
+      "id": "s-6",
+      "skill_name": "ESP32"
+    },
+    {
+      "id": "s-7",
+      "skill_name": "MQTT"
+    },
+    {
+      "id": "s-16d978f4",
+      "skill_name": "ROS2"
+    },
+    {
+      "id": "s-4e679400",
+      "skill_name": "C++"
+    },
+    {
+      "id": "s-e0e7c8ee",
+      "skill_name": "OpenCV"
+    },
+    {
+      "id": "s-e95ab16d",
+      "skill_name": "PyTorch"
+    }
+  ],
+  "user_skills": [
+    {
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "skill_id": "s-1",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "skill_id": "s-2",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "skill_id": "s-1",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "skill_id": "s-4",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "skill_id": "s-16d978f4",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "skill_id": "s-2",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "skill_id": "s-3",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "skill_id": "s-4e679400",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "skill_id": "s-5",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "skill_id": "s-2",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "skill_id": "s-3",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "skill_id": "s-5",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "skill_id": "s-1",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "skill_id": "s-2",
+      "proficiency_level": "intermediate"
+    },
+    {
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "skill_id": "s-1",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "skill_id": "s-2",
+      "proficiency_level": "advanced"
+    },
+    {
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "skill_id": "s-6",
+      "proficiency_level": "intermediate"
+    }
+  ],
+  "user_interests": [
+    {
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "interest": "Web Development"
+    },
+    {
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "interest": "Campus Automation"
+    }
+  ],
+  "projects": [
+    {
+      "id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "MIT AOE Smart Campus Shuttle Tracker",
+      "short_description": "Real-time GPS tracking and occupancy monitor for MIT AOE campus shuttles between Alandi and Pune city.",
+      "description": "An IoT and web-based platform providing live GPS tracking, arrival time predictions, and seat availability for college buses. Designed to eliminate long waiting queues at Alandi depot and help students commute safely.",
+      "problem_statement": "Students and faculty face unpredictable transit timings and crowded shuttle buses between Alandi and Swargate/Pune Station without any real-time tracking system.",
+      "proposed_solution": "Deploy ESP32 GPS/cellular telemetry nodes on campus buses and connect them to a lightweight web dashboard that displays live vehicle locations, estimated arrival times, and passenger count.",
+      "technology_stack": [
+        "React",
+        "Express",
+        "Node.js",
+        "Leaflet.js",
+        "PostgreSQL"
+      ],
+      "category": "Web development",
+      "project_type": "mini_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-11-30",
+      "duration_weeks": 8,
+      "status": "archived",
+      "created_at": "2026-11-15T13:46:33.822Z",
+      "updated_at": "2026-11-15T13:46:52.436Z"
+    },
+    {
+      "id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "MIT AOE Campus Ride Share & Shuttle Tracker",
+      "short_description": "Live tracking, ETA forecasting, and carpool matching for students commuting to Alandi campus.",
+      "description": "A collaborative student mobility system that pairs real-time bus telemetry with peer carpooling routes. Eliminates congestion and makes travel safer for evening lab batches.",
+      "problem_statement": "Students face long waits at Alandi bus stand with zero visibility into bus schedules and arrival delays.",
+      "proposed_solution": "Develop an interactive GPS tracking map and student carpool coordination workspace with college-verified logins.",
+      "technology_stack": [
+        "React",
+        "Express",
+        "PostgreSQL",
+        "Leaflet.js"
+      ],
+      "category": "Web development",
+      "project_type": "mini_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-11-20",
+      "duration_weeks": 8,
+      "status": "archived",
+      "created_at": "2026-10-26T18:16:54.441Z",
+      "updated_at": "2026-11-23T12:49:56.679Z"
+    },
+    {
+      "id": "p-1",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "22222222-2222-2222-2222-222222222222",
+      "title": "MIT AOE Smart Campus Shuttle Tracker",
+      "short_description": "Real-time GPS tracking and occupancy monitor for MIT AOE campus shuttles between Alandi and Pune city.",
+      "description": "An IoT and web-based platform providing live GPS tracking, arrival time predictions, and seat availability for college buses. Designed to eliminate long waiting queues at Alandi depot and help students commute safely.",
+      "problem_statement": "Students and faculty face unpredictable transit timings and crowded shuttle buses between Alandi and Swargate/Pune Station without any real-time tracking system.",
+      "proposed_solution": "Deploy ESP32 GPS/cellular telemetry nodes on campus buses and connect them to a lightweight web dashboard that displays live vehicle locations, estimated arrival times, and passenger count.",
+      "technology_stack": [
+        "React",
+        "Express",
+        "Node.js",
+        "Leaflet.js",
+        "PostgreSQL"
+      ],
+      "category": "Web development",
+      "project_type": "mini_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-11-30",
+      "duration_weeks": 8,
+      "status": "recruiting",
+      "created_at": "2026-10-25T18:13:32.303Z",
+      "updated_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "title": "Autonomous Campus Delivery Rover",
+      "short_description": "Self-driving four-wheeled rover navigating pedestrian walkways between Academic Blocks and Canteen.",
+      "description": "An autonomous ground vehicle (AGV) prototype utilizing ROS2, 2D LiDAR SLAM, and Depth Cameras to deliver lab components and stationery across campus walkways safely without colliding with pedestrians.",
+      "problem_statement": "Staff and student project labs frequently need rapid physical transport of hardware tools and printed circuit boards across distant campus wings during working hours.",
+      "proposed_solution": "Build a differential drive rover with waypoint navigation, ultrasonic obstacle detection, and live telemetry to automate short-distance campus deliveries.",
+      "technology_stack": [
+        "ROS2",
+        "Python",
+        "C++",
+        "LiDAR",
+        "Raspberry Pi",
+        "OpenCV"
+      ],
+      "category": "Robotics",
+      "project_type": "major_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-12-10",
+      "duration_weeks": 16,
+      "status": "recruiting",
+      "created_at": "2026-11-12T10:11:59.842Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "title": "Alandi Water Quality Monitoring IoT Grid",
+      "short_description": "Solar-powered wireless sensor buoys monitoring Indrayani river water quality parameters in real time.",
+      "description": "A distributed environmental sensing network featuring floating buoys along the Indrayani river near Alandi temple ghat. Measures dissolved oxygen, turbidity, pH, and water temperature to publish open ecological telemetry.",
+      "problem_statement": "Pilgrimage seasons and industrial discharge result in rapid, undetected shifts in Indrayani water quality without actionable continuous public monitoring.",
+      "proposed_solution": "Deploy submersible multi-probe sensor pods transmitting telemetry over LoRaWAN to a campus dashboard with automated pollution threshold alerts.",
+      "technology_stack": [
+        "ESP32",
+        "LoRaWAN",
+        "Python",
+        "InfluxDB",
+        "Grafana",
+        "MQTT"
+      ],
+      "category": "Research",
+      "project_type": "research_project",
+      "team_size": 3,
+      "recruitment_deadline": "2026-12-05",
+      "duration_weeks": 12,
+      "status": "recruiting",
+      "created_at": "2026-11-13T00:16:08.467Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "title": "Contactless Smart Attendance & Face Recognition Gate",
+      "short_description": "Edge-computed classroom attendance system with infrared anti-spoofing liveness detection.",
+      "description": "A high-speed edge facial recognition platform that detects and logs student attendance within 300ms upon entering the classroom or lab, preventing buddy punching with infrared depth checks.",
+      "problem_statement": "Manual roll-calling consumes up to 10 minutes of every 60-minute lecture, and traditional fingerprint scanners cause entry bottlenecks.",
+      "proposed_solution": "Mount edge camera nodes with TensorRT optimized face embeddings paired with secure backend sync to the student management system.",
+      "technology_stack": [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "FastAPI",
+        "React",
+        "Docker"
+      ],
+      "category": "AI and ML",
+      "project_type": "mini_project",
+      "team_size": 3,
+      "recruitment_deadline": "2026-11-28",
+      "duration_weeks": 8,
+      "status": "recruiting",
+      "created_at": "2026-11-13T07:22:33.032Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "title": "Peer Tutoring & Lecture Notes Knowledge Hub",
+      "short_description": "College-verified collaborative study network for mentoring juniors, past question papers, and lab code.",
+      "description": "A student-exclusive portal where high-performing seniors schedule 1-on-1 subject clarification sessions, exchange verified handwritten lecture notes, and share solved university question sets with peer upvoting.",
+      "problem_statement": "Academic resources and exam tips are fragmented across informal WhatsApp groups with no indexing, verification, or searchable taxonomy.",
+      "proposed_solution": "Create a clean, college-gated repository with syllabus-indexed units, PDF preview annotations, and a karma-based peer tutoring scheduler.",
+      "technology_stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Prisma"
+      ],
+      "category": "Web development",
+      "project_type": "personal_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-12-01",
+      "duration_weeks": 10,
+      "status": "recruiting",
+      "created_at": "2026-11-12T17:28:56.123Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "Campus Solar Energy Forecast & Microgrid Dashboard",
+      "short_description": "Predictive power load forecasting and rooftop solar generation analytics for MIT AOE campus buildings.",
+      "description": "Analyzes energy consumption across computer centers, mechanical workshops, and hostel blocks against rooftop photovoltaic output to recommend smart load shifting and peak demand cutbacks.",
+      "problem_statement": "The campus incurs heavy peak utility tariffs because high-power laboratory machinery runs concurrently with peak solar drop-offs.",
+      "proposed_solution": "Train time-series gradient boosted models on weather and consumption telemetry to forecast day-ahead net power deficits.",
+      "technology_stack": [
+        "Python",
+        "Pandas",
+        "Scikit-Learn",
+        "Docker",
+        "Plotly",
+        "FastAPI"
+      ],
+      "category": "Data science",
+      "project_type": "major_project",
+      "team_size": 3,
+      "recruitment_deadline": "2026-12-15",
+      "duration_weeks": 14,
+      "status": "recruiting",
+      "created_at": "2026-11-10T22:22:17.122Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "College Fest Ticketing & Rapid QR Access Pass",
+      "short_description": "Offline-capable mobile app for annual festival registration, flash hackathons, and gate badge scanning.",
+      "description": "A mobile passbook app designed to streamline thousands of student check-ins during technical symposiums and cultural fests, with encrypted offline QR verification and live attendee headcounts.",
+      "problem_statement": "Paper wristbands and manual gate spreadsheets cause hour-long entry queues and duplicate ticket pass-backs at annual events.",
+      "proposed_solution": "Provide time-synced dynamic QR codes that refresh every 30 seconds and can be validated offline by volunteer scanners.",
+      "technology_stack": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Node.js",
+        "Express"
+      ],
+      "category": "Mobile apps",
+      "project_type": "hackathon",
+      "team_size": 4,
+      "recruitment_deadline": "2026-11-25",
+      "duration_weeks": 6,
+      "status": "recruiting",
+      "created_at": "2026-11-13T13:07:24.591Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "title": "Campus Network Intrusion Honeypot & Threat Map",
+      "short_description": "Internal cybersecurity utility and simulated honeypot to detect rogue devices and analyze campus traffic.",
+      "description": "Deploys lightweight decoy network services (SSH, HTTP, SMB) within the college subnet to monitor unauthorized scan sweeps, credential brute-forcing, and rogue Wi-Fi AP intrusions.",
+      "problem_statement": "Open lab Wi-Fi networks are vulnerable to lateral movement by compromised personal student laptops and rogue access points.",
+      "proposed_solution": "Configure low-interaction honeypots with an automated alert pipeline that surfaces rogue port scans on a live administrative threat map.",
+      "technology_stack": [
+        "Go",
+        "Python",
+        "Wireshark",
+        "Suricata",
+        "Linux",
+        "Elasticsearch"
+      ],
+      "category": "Cybersecurity",
+      "project_type": "research_project",
+      "team_size": 3,
+      "recruitment_deadline": "2026-12-08",
+      "duration_weeks": 12,
+      "status": "recruiting",
+      "created_at": "2026-11-11T07:09:13.891Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "title": "Automated Library Shelf Scanning & RFID Cart",
+      "short_description": "Mechatronic tabletop cart that scans RFID tags on library shelves and detects misplaced books.",
+      "description": "An automated shelf-traversing scanner with directional RFID antennas that reconciles book call numbers against the central library database, flagging misplaced books on a digital inventory map.",
+      "problem_statement": "Thousands of textbooks are misplaced daily by browsing students, rendering them virtually lost for weeks despite showing available in the catalog.",
+      "proposed_solution": "Build an automated rail-and-cart robot that glides along bookshelf aisles after hours to pinpoint the shelf location of every cataloged book.",
+      "technology_stack": [
+        "Arduino",
+        "C++",
+        "Python",
+        "SolidWorks",
+        "RFID",
+        "Stepper Motors"
+      ],
+      "category": "Robotics",
+      "project_type": "mini_project",
+      "team_size": 3,
+      "recruitment_deadline": "2026-11-29",
+      "duration_weeks": 8,
+      "status": "recruiting",
+      "created_at": "2026-11-12T11:09:04.688Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "title": "Bloom Taxonomy AI Exam & Rubrics Generator",
+      "short_description": "AI-assisted exam question paper compiler and grading rubrics evaluator for engineering curriculum.",
+      "description": "A domain-tuned application that parses university course syllabi and learning objectives to generate balanced question papers strictly mapped to Bloom cognitive levels (Remembering through Evaluating).",
+      "problem_statement": "Faculty spend extensive time drafting balanced mid-term and semester papers that satisfy NBA/NAAC accreditation rubrics.",
+      "proposed_solution": "Utilize Gemini API and LangChain with syllabus PDF retrieval to generate calibrated problem statements and numerical answer keys.",
+      "technology_stack": [
+        "Gemini API",
+        "LangChain",
+        "Python",
+        "FastAPI",
+        "React",
+        "Tailwind CSS"
+      ],
+      "category": "AI and ML",
+      "project_type": "hackathon",
+      "team_size": 3,
+      "recruitment_deadline": "2026-11-22",
+      "duration_weeks": 6,
+      "status": "recruiting",
+      "created_at": "2026-11-15T10:12:12.613Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "college_id": "11111111-1111-1111-1111-111111111111",
+      "owner_id": "22222222-2222-2222-2222-222222222222",
+      "title": "Campus Emergency SOS & Medical Response Network",
+      "short_description": "Instant geotargeted emergency alert broadcast to campus security and ambulance with live GPS tracking.",
+      "description": "A life-safety mobile and web network that allows students in medical or security distress to broadcast an SOS alert with precise indoor room locations to campus security patrol and the medical infirmary.",
+      "problem_statement": "In sudden laboratory mishaps or medical emergencies, contacting guards across large multistory academic buildings is slow and lacks location clarity.",
+      "proposed_solution": "Create a one-tap panic button mobile application integrated with campus security dispatch monitors and Bluetooth beacon triangulation.",
+      "technology_stack": [
+        "React Native",
+        "TypeScript",
+        "WebSockets",
+        "Node.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "category": "Mobile apps",
+      "project_type": "major_project",
+      "team_size": 4,
+      "recruitment_deadline": "2026-12-12",
+      "duration_weeks": 14,
+      "status": "recruiting",
+      "created_at": "2026-11-10T14:37:22.526Z",
+      "updated_at": "2026-11-15T13:32:12.838Z"
+    }
+  ],
+  "project_roles": [
+    {
+      "id": "pr-1",
+      "project_id": "p-1",
+      "role_name": "Frontend Developer",
+      "description": "Build interactive map UI in React & Leaflet",
+      "positions_available": 1
+    },
+    {
+      "id": "pr-2",
+      "project_id": "p-1",
+      "role_name": "Backend & API Engineer",
+      "description": "Implement REST & WebSocket endpoints",
+      "positions_available": 1
+    },
+    {
+      "id": "pr-3",
+      "project_id": "p-1",
+      "role_name": "IoT Hardware Lead",
+      "description": "Interface GPS/GSM modules with microcontroller",
+      "positions_available": 1
+    },
+    {
+      "id": "07531afe-9887-454e-a84a-15cc02474afc",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "role_name": "Frontend Developer",
+      "description": "Design responsive dashboard in React",
+      "positions_available": 1
+    },
+    {
+      "id": "3f93b946-bda6-4af2-bb97-5a60f872a2b2",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "role_name": "Backend API Engineer",
+      "description": "Build RESTful endpoints and real-time socket events",
+      "positions_available": 1
+    },
+    {
+      "id": "c4682f37-acfe-4769-b5ae-7163f1cfba8a",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "role_name": "ROS Navigation Specialist",
+      "description": "Configure Nav2 stack, costmaps, and odometry telemetry",
+      "positions_available": 1
+    },
+    {
+      "id": "577f1529-82d2-4161-8fc5-39c6cee9c82d",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "role_name": "Computer Vision Lead",
+      "description": "Train YOLOv8 pedestrian and obstacle avoidance pipeline",
+      "positions_available": 1
+    },
+    {
+      "id": "32e60f0b-97bd-4256-92ac-e4bb4bae26ce",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "role_name": "Hardware & Motor Driver Engineer",
+      "description": "Interface BLDC motor drivers with microcontrollers and power management",
+      "positions_available": 1
+    },
+    {
+      "id": "81d132ce-08dc-496a-ae53-fa4a02030539",
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "role_name": "Embedded Firmware Developer",
+      "description": "Develop low-power sleep routines and sensor calibrations on ESP32",
+      "positions_available": 1
+    },
+    {
+      "id": "42e44a47-4d4f-426a-89c4-b79e654ce4af",
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "role_name": "Data Pipeline & Dashboard Lead",
+      "description": "Manage InfluxDB time-series ingestion and public Grafana portals",
+      "positions_available": 1
+    },
+    {
+      "id": "a01846db-6bad-410c-9510-1bc7775c5abd",
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "role_name": "Deep Learning Engineer",
+      "description": "Fine-tune ArcFace embeddings and optimize on-device inference",
+      "positions_available": 1
+    },
+    {
+      "id": "d464b77f-73a1-4e33-8b8e-df55345b8308",
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "role_name": "Full Stack Web Developer",
+      "description": "Construct teacher attendance override portals and timetable feeds",
+      "positions_available": 1
+    },
+    {
+      "id": "471fc196-b511-4fb0-a0ba-2360704455df",
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "role_name": "Frontend Engineer (Next.js)",
+      "description": "Build responsive document reader and calendar booking UI",
+      "positions_available": 1
+    },
+    {
+      "id": "5fbf6f34-5d6e-476d-9f54-a0327777cbc4",
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "role_name": "Backend & Database Engineer",
+      "description": "Design PostgreSQL schemas and authorization policies in Prisma",
+      "positions_available": 1
+    },
+    {
+      "id": "8ac4f65d-6d7b-454d-ab30-9152614175df",
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "role_name": "UI/UX & Product Designer",
+      "description": "Design accessible design system and dark-mode student dashboard",
+      "positions_available": 1
+    },
+    {
+      "id": "c4697fb3-87b2-4f00-a1d1-b2005df8a9ef",
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "role_name": "Time-Series Data Scientist",
+      "description": "Engineer lag features, seasonal solar models, and forecast metrics",
+      "positions_available": 1
+    },
+    {
+      "id": "9f40a9cf-37b9-4d07-a301-16d82b51ea07",
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "role_name": "Data Visualization Lead",
+      "description": "Render interactive daily energy balance diagrams and load heatmaps",
+      "positions_available": 1
+    },
+    {
+      "id": "b8999eba-200f-4e46-895d-dfce0b406163",
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "role_name": "Flutter Mobile Engineer",
+      "description": "Build offline-first scanning camera views and passbook animations",
+      "positions_available": 1
+    },
+    {
+      "id": "75de3de2-132c-4356-843c-da436cf80375",
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "role_name": "Backend API Architect",
+      "description": "Construct ticket generation endpoints and real-time event analytics",
+      "positions_available": 1
+    },
+    {
+      "id": "00452a22-715b-4db2-8edc-b197005d17a7",
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "role_name": "Security & Token Validation Tester",
+      "description": "Audit replay-attack prevention and QR cryptographic signatures",
+      "positions_available": 1
+    },
+    {
+      "id": "6762e3bd-b8cb-44c4-b2de-90a06beeafa5",
+      "project_id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "role_name": "Go Systems Programmer",
+      "description": "Write low-overhead daemon monitors for packet capture and event logging",
+      "positions_available": 1
+    },
+    {
+      "id": "e5782377-6996-46bc-9664-4024b56f06d5",
+      "project_id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "role_name": "Threat Detection Analyst",
+      "description": "Analyze PCAP dumps and map indicators of compromise to MITRE ATT&CK",
+      "positions_available": 1
+    },
+    {
+      "id": "81f040ef-0841-465b-b2ca-15c80743ad80",
+      "project_id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "role_name": "CAD & Mechanism Lead",
+      "description": "Design 3D-printable brackets, linear rail guides, and chassis enclosures",
+      "positions_available": 1
+    },
+    {
+      "id": "7a7cb198-bd75-4953-b1eb-a0159b541810",
+      "project_id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "role_name": "Firmware & RFID Lead",
+      "description": "Program stepper trajectories and anti-collision RFID tag read cycles",
+      "positions_available": 1
+    },
+    {
+      "id": "d057cf9a-239f-435a-bdf5-715dd75a63c6",
+      "project_id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "role_name": "LLM Prompt & RAG Engineer",
+      "description": "Construct retrieval pipelines over course syllabi and past paper corpora",
+      "positions_available": 1
+    },
+    {
+      "id": "fc78a754-e6f4-4f79-812b-4e23ba841875",
+      "project_id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "role_name": "Frontend Application Developer",
+      "description": "Build interactive question editor with drag-and-drop marks distribution",
+      "positions_available": 1
+    },
+    {
+      "id": "b9952e37-4ae0-4c03-b393-d2aa0bd8fe91",
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "role_name": "Mobile App Lead (React Native)",
+      "description": "Implement background GPS beaconing and one-tap emergency widget",
+      "positions_available": 1
+    },
+    {
+      "id": "8898ca42-a558-4cea-a668-330b74f0950e",
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "role_name": "Real-time WebSocket Engineer",
+      "description": "Manage low-latency incident dispatch feeds and security desk alerts",
+      "positions_available": 1
+    },
+    {
+      "id": "7218066c-0430-45d8-bb7c-ba568065a00c",
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "role_name": "Campus Mapping & GIS Specialist",
+      "description": "Digitize building floorplans and landmark coordinates for emergency teams",
+      "positions_available": 1
+    },
+    {
+      "id": "a3c9499c-12c2-42e4-be2d-8e88d1835cd2",
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "role_name": "Frontend Developer",
+      "description": "Build interactive map UI in React & Leaflet",
+      "positions_available": 1
+    },
+    {
+      "id": "040a4982-78e2-4a11-a365-3989bb18f833",
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "role_name": "Backend & API Engineer",
+      "description": "Implement REST & WebSocket telemetry endpoints",
+      "positions_available": 1
+    },
+    {
+      "id": "8860f259-70e1-4380-b804-342e6faaa246",
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "role_name": "IoT Hardware Specialist",
+      "description": "Interface GPS/GSM modules with ESP32 microcontroller",
+      "positions_available": 1
+    }
+  ],
+  "project_skills": [
+    {
+      "project_id": "p-1",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "p-1",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "p-1",
+      "skill_id": "s-4",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "skill_id": "s-16d978f4",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "skill_id": "s-4e679400",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "skill_id": "s-e0e7c8ee",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "skill_id": "s-6",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "skill_id": "s-7",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "skill_id": "s-e95ab16d",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "skill_id": "s-1",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "skill_id": "s-3",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "skill_id": "s-1",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "skill_id": "s-2",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "skill_id": "s-1",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "skill_id": "s-2",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "skill_id": "s-4e679400",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "skill_id": "s-5",
+      "required_level": "beginner"
+    },
+    {
+      "project_id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "skill_id": "s-5",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "skill_id": "s-3",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "skill_id": "s-1",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "skill_id": "s-2",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "skill_id": "s-4",
+      "required_level": "intermediate"
+    },
+    {
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "skill_id": "s-3",
+      "required_level": "intermediate"
+    }
+  ],
+  "team_members": [
+    {
+      "id": "tm-1",
+      "project_id": "p-1",
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "role": "Project owner",
+      "joined_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "c6e2c895-0421-4f0e-8287-7f3acc36aec6",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "role": "Project owner",
+      "joined_at": "2026-10-26T18:16:54.441Z"
+    },
+    {
+      "id": "62f76ddb-da2c-43e9-985f-5984173c7595",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "user_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "1fb0c0f8-75f4-46b4-9857-7e3488678763",
+      "project_id": "aab25b75-6284-43b0-9e40-7ab22f0ad5ae",
+      "user_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "13ac7f9a-0504-40ce-be08-d3a4318b3593",
+      "project_id": "4bcc99c5-a90e-459a-bbad-c46f7cc8ebf8",
+      "user_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "54ec2aa0-a40f-4424-89ba-11988b17a916",
+      "project_id": "4d1df185-2204-494c-9806-b5e6b9ecf76a",
+      "user_id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "02a8d0a7-5fe5-4a53-b564-d36fbca68f9f",
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "e4d177bd-4475-4322-b685-e7a6ff410d92",
+      "project_id": "98fa2dd1-6514-4793-8f80-93a07f0a4b6d",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "b0023eba-a8a0-4495-a7f2-eeab83f89c2d",
+      "project_id": "450ba476-3943-4a95-b611-cc5a3f22be53",
+      "user_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "b27a4b9f-cca4-48ec-ac0d-c3a00d21f51f",
+      "project_id": "fb6c496b-778d-4e8e-bfa6-93cf201dc342",
+      "user_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "bc12bcf1-9de6-4769-895e-353f7b42460b",
+      "project_id": "d82d588d-fb7d-437f-bbee-94cf99030625",
+      "user_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "29a39e6e-cfd2-4807-b18e-d93d94025e93",
+      "project_id": "3d5d4b50-99b4-482b-945c-1d28e25d2973",
+      "user_id": "22222222-2222-2222-2222-222222222222",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:32:12.838Z"
+    },
+    {
+      "id": "c22d9763-fada-4767-87d0-e0723bace220",
+      "project_id": "be982a78-93cd-450e-ac58-59e05d4cbf73",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "role": "Project owner",
+      "joined_at": "2026-11-15T13:46:33.827Z"
+    },
+    {
+      "id": "ae2f8eff-2267-411e-8db7-691421629f98",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "user_id": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "role": "Frontend Lead",
+      "joined_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "ebd693dd-6bd8-4e4a-97bb-c2d4a0d11f99",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "user_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "role": "Backend & Security Engineer",
+      "joined_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "f9f0fa13-dc91-44db-9a8b-cf841d41602e",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "role": "Embedded Systems Specialist",
+      "joined_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "11760cab-0f7a-4ae2-9136-4b44d83d229a",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "user_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "role": "Mechanical Chassis Lead",
+      "joined_at": "2026-11-10T13:54:13.970Z"
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "58c74295-4b49-4c4c-93c2-9565a09f71e2",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_at": "2026-11-15T13:47:37.749Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "85c26c61-f19c-4bbb-bc4d-43b3babeff8b",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "project_role_id": "07531afe-9887-454e-a84a-15cc02474afc",
+      "applicant_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "introduction_message": "I have designed interactive geospatial mapping interfaces in Leaflet and React for our college mobility hackathon. I would love to build the live commuter ETA view.",
+      "status": "pending",
+      "created_at": "2026-11-15T10:54:13.969Z",
+      "updated_at": "2026-11-15T10:54:13.970Z"
+    },
+    {
+      "id": "4957d906-ae97-4734-86d9-cd1bea3bffb0",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "project_role_id": "3f93b946-bda6-4af2-bb97-5a60f872a2b2",
+      "applicant_id": "50462015-191a-43d9-b481-5a54fc770c55",
+      "introduction_message": "Experienced with Express.js and real-time WebSocket coordinate streaming. I want to build the low-latency bus GPS telemetry ingest pipeline.",
+      "status": "pending",
+      "created_at": "2026-11-14T23:54:13.970Z",
+      "updated_at": "2026-11-14T23:54:13.970Z"
+    },
+    {
+      "id": "7f5009cb-e67c-49d6-b50c-9a319cf9391a",
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "project_role_id": "c4697fb3-87b2-4f00-a1d1-b2005df8a9ef",
+      "applicant_id": "1f344c7b-69ff-4f3e-92d4-fffe12b94fb8",
+      "introduction_message": "I have researched solar irradiation models using Scikit-Learn and Pandas. Excited to deploy daily peak load forecasts for the campus microgrid.",
+      "status": "pending",
+      "created_at": "2026-11-14T17:54:13.970Z",
+      "updated_at": "2026-11-14T17:54:13.970Z"
+    },
+    {
+      "id": "dca2e08a-6803-4ffb-8280-95703e8268d5",
+      "project_id": "d90c76cb-532d-4864-8e48-fd7ff00e8aa7",
+      "project_role_id": "9f40a9cf-37b9-4d07-a301-16d82b51ea07",
+      "applicant_id": "96439269-d711-4434-ad93-1d6728781b3e",
+      "introduction_message": "Built high-throughput telemetry dashboards in React and Plotly. Can render real-time power production vs building load comparison charts.",
+      "status": "accepted",
+      "created_at": "2026-11-13T13:54:13.970Z",
+      "updated_at": "2026-11-14T13:54:13.970Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-1",
+      "project_id": "p-1",
+      "assigned_to": "22222222-2222-2222-2222-222222222222",
+      "created_by": "22222222-2222-2222-2222-222222222222",
+      "title": "Draft API contracts for GPS telemetry endpoints",
+      "description": "Define payload JSON schemas and update rate limits.",
+      "status": "in_progress",
+      "due_date": "2026-11-10",
+      "created_at": "2026-10-26T18:13:32.303Z",
+      "updated_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "71ea15f3-d163-4afc-a92e-2003a601e1c1",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "title": "Define Alandi bus terminus geofencing polygon in Leaflet",
+      "description": "Mark precise GPS latitude/longitude bounding boxes for Alandi depot and MIT AOE main porch to trigger automatic arrival events.",
+      "status": "in_progress",
+      "due_date": "2026-11-20",
+      "created_at": "2026-11-13T13:54:13.970Z",
+      "updated_at": "2026-11-16T08:56:08.650Z"
+    },
+    {
+      "id": "b48b71fc-80c7-4911-a80d-8d59cea186ac",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "96439269-d711-4434-ad93-1d6728781b3e",
+      "title": "Implement token bucket rate limiter for GPS polling endpoint",
+      "description": "Protect /api/transit/live coordinates against crawler scraping and abuse while maintaining under 50ms latency for student phones.",
+      "status": "todo",
+      "due_date": "2026-11-22",
+      "created_at": "2026-11-13T13:54:13.970Z",
+      "updated_at": "2026-11-15T13:56:01.225Z"
+    },
+    {
+      "id": "2de1cbe7-18f5-48bc-8b1e-a2f246edc061",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "Integrate live GPS breadcrumb trail on interactive campus map",
+      "description": "Render smooth real-time bus marker movement with heading arrow rotation using socket updates from ESP32 vehicle nodes.",
+      "status": "in_progress",
+      "due_date": "2026-11-18",
+      "created_at": "2026-11-12T13:54:13.970Z",
+      "updated_at": "2026-11-14T13:54:13.970Z"
+    },
+    {
+      "id": "95766dfa-9bdd-4e54-b8f6-23e83ad678fc",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "Bench-test NEO-6M GPS satellite acquisition under partial cover",
+      "description": "Record time-to-first-fix (TTFF) and cold start latencies inside metal vehicle chassis vs roof antenna placement.",
+      "status": "completed",
+      "due_date": "2026-11-19",
+      "created_at": "2026-11-12T13:54:13.970Z",
+      "updated_at": "2026-11-16T08:56:11.154Z"
+    },
+    {
+      "id": "c9e56375-f7b3-406f-b9e6-48c76cf9e331",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "Draft system architecture and telemetry protocol specification",
+      "description": "Created MQTT payload schema and defined JSON schemas for coordinate pings, vehicle battery level, and passenger count estimates.",
+      "status": "completed",
+      "due_date": "2026-11-14",
+      "created_at": "2026-11-09T13:54:13.970Z",
+      "updated_at": "2026-11-11T13:54:13.970Z"
+    },
+    {
+      "id": "6e19980b-efee-45fc-8efa-45c512bd4ba4",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "created_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "assigned_to": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "title": "Initialize repository with ESLint, Prettier, and Vite proxy",
+      "description": "Setup initial frontend structure, Leaflet.js dependencies, and API proxy routing to Express backend.",
+      "status": "completed",
+      "due_date": "2026-11-12",
+      "created_at": "2026-11-08T13:54:13.970Z",
+      "updated_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "50e5af7b-968f-4dfc-bf9a-033b0d321194",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "created_by": "dc306885-e62f-4117-83d9-de58f514a012",
+      "assigned_to": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "Calibrate optical wheel encoders and velocity PID tuning",
+      "description": "Tune proportional-integral-derivative gains for smooth low-speed deceleration near pedestrian crossings.",
+      "status": "todo",
+      "due_date": "2026-11-21",
+      "created_at": "2026-11-13T13:54:13.970Z",
+      "updated_at": "2026-11-13T13:54:13.970Z"
+    },
+    {
+      "id": "440d4ff7-d357-49c8-9423-24e56bae667c",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "created_by": "dc306885-e62f-4117-83d9-de58f514a012",
+      "assigned_to": "dc306885-e62f-4117-83d9-de58f514a012",
+      "title": "Configure ROS2 Nav2 costmaps and 2D LiDAR SLAM parameters",
+      "description": "Set obstacle inflation radius and local trajectory planner velocity limits for Academic Block C corridors.",
+      "status": "in_progress",
+      "due_date": "2026-11-19",
+      "created_at": "2026-11-12T13:54:13.970Z",
+      "updated_at": "2026-11-14T13:54:13.970Z"
+    },
+    {
+      "id": "dc22a81f-7d65-4bc9-8779-84077c12beb0",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "created_by": "dc306885-e62f-4117-83d9-de58f514a012",
+      "assigned_to": "50462015-191a-43d9-b481-5a54fc770c55",
+      "title": "CAD design and 3D print front caster suspension bracket",
+      "description": "Fabricated impact-resistant PETG front wheel assembly with dual spring dampening.",
+      "status": "completed",
+      "due_date": "2026-11-15",
+      "created_at": "2026-11-10T13:54:13.970Z",
+      "updated_at": "2026-11-12T13:54:13.970Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "a-1",
+      "project_id": "p-1",
+      "author_id": "22222222-2222-2222-2222-222222222222",
+      "message": "Welcome everyone! We are recruiting frontend and IoT engineers for the shuttle project.",
+      "created_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "4f0f1295-cac5-4d11-be8f-4e7f403289e7",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "author_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "message": "Welcome everyone! We received our ESP32-WROOM and NEO-6M development kits from the IoT department lab. Please review our pinout assignments and MQTT telemetry payload in the resources section below.",
+      "created_at": "2026-11-13T13:54:13.970Z"
+    },
+    {
+      "id": "c9bbbdd6-dc0c-4a2f-b881-5c6ea6a27c7f",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "author_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "message": "Field Trial Notice: We received formal approval from the transport desk to mount our battery-powered GPS datalogger on Campus Shuttle Bus #2 this Friday at 4:30 PM. We will test live packet loss under tree canopies along the Alandi ghat.",
+      "created_at": "2026-11-15T07:54:13.970Z"
+    },
+    {
+      "id": "90a4669d-ddb6-4839-a8a7-776e453d1823",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "author_id": "dc306885-e62f-4117-83d9-de58f514a012",
+      "message": "Autonomous Rover Kickoff: Meeting Wednesday 5:00 PM at Mechatronics Lab (Block B). Please ensure your laptops have ROS2 Humble and Nav2 binaries installed before the session.",
+      "created_at": "2026-11-14T13:54:13.970Z"
+    }
+  ],
+  "project_resources": [
+    {
+      "id": "r-1",
+      "project_id": "p-1",
+      "added_by": "22222222-2222-2222-2222-222222222222",
+      "label": "MIT AOE Shuttle Route Maps",
+      "url": "https://mitaoe.ac.in",
+      "created_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "113afe87-e0e8-4c28-937c-f331a12a95ac",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "added_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "label": "MIT AOE Campus Transit Routes & Bus Stop GPS Coordinates",
+      "url": "https://mitaoe.ac.in",
+      "created_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "5474915e-93de-4911-a144-efe3a67e4c9c",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "added_by": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "label": "ESP32 GPS Vehicle Node Firmware Repository",
+      "url": "https://github.com/mitaoe-student",
+      "created_at": "2026-11-11T13:54:13.970Z"
+    },
+    {
+      "id": "69248059-7aa1-4a9f-aee7-4c807906b6bc",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "added_by": "b5a828ed-f6a1-49a0-b3ca-38209ea2cee3",
+      "label": "Interactive Commuter Tracking UI & Figma Prototypes",
+      "url": "https://figma.com",
+      "created_at": "2026-11-13T13:54:13.970Z"
+    },
+    {
+      "id": "94ea617a-0ce0-4602-a8f1-14ba3028549e",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "added_by": "dc306885-e62f-4117-83d9-de58f514a012",
+      "label": "ROS2 Navigation Stack (Nav2) Official Integration Guide",
+      "url": "https://docs.nav2.org",
+      "created_at": "2026-11-12T13:54:13.970Z"
+    },
+    {
+      "id": "ec32ec0f-246a-4c72-be30-8e995df59d63",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "added_by": "50462015-191a-43d9-b481-5a54fc770c55",
+      "label": "Rover 4WD Mechanical Chassis CAD Models in Onshape",
+      "url": "https://cad.onshape.com",
+      "created_at": "2026-11-13T13:54:13.970Z"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "m-1",
+      "project_id": "p-1",
+      "title": "Working Prototype Demo on Campus Bus #4",
+      "due_date": "2026-11-25",
+      "created_at": "2026-10-26T18:13:32.303Z"
+    },
+    {
+      "id": "4676e063-3f40-4c39-8256-0ffd5749d62f",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "title": "Hardware Breadboard GPS & Cellular Ping Verification",
+      "due_date": "2026-11-24",
+      "created_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "0ad41e19-17af-4070-a7b0-30748a6d808d",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "title": "Alpha Web Dashboard Live on Campus Intranet",
+      "due_date": "2026-12-05",
+      "created_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "16410fec-25a1-4f8e-b84b-1addb240c91d",
+      "project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "title": "Full Route Pilot on Alandi - Swargate Bus #2",
+      "due_date": "2026-12-18",
+      "created_at": "2026-11-10T13:54:13.970Z"
+    },
+    {
+      "id": "1f116e86-ed9a-49ae-9724-292867421ed7",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "title": "Chassis Drive Test & Dual Motor Torque Calibration",
+      "due_date": "2026-11-28",
+      "created_at": "2026-11-12T13:54:13.970Z"
+    },
+    {
+      "id": "0069e575-3aa5-4dcf-9d80-17bf06beabdd",
+      "project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "title": "Autonomous Hallway Obstacle Avoidance Demo",
+      "due_date": "2026-12-12",
+      "created_at": "2026-11-12T13:54:13.970Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "2a50a512-64ab-46a7-983a-c0f577b47b00",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "New project application",
+      "message": "Ananya Deshmukh applied for the Frontend Developer role in MIT AOE Campus Ride Share & Shuttle Tracker.",
+      "notification_type": "project_application",
+      "related_project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "is_read": true,
+      "created_at": "2026-11-15T13:19:13.970Z"
+    },
+    {
+      "id": "26dce7d3-d630-4a1c-a977-665b906da028",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "New task assignment",
+      "message": "You were assigned: \"Integrate live GPS breadcrumb trail on interactive campus map\" in MIT AOE Campus Ride Share & Shuttle Tracker.",
+      "notification_type": "task_assignment",
+      "related_project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "is_read": false,
+      "created_at": "2026-11-15T11:54:13.970Z"
+    },
+    {
+      "id": "47617da0-7c50-412b-bcde-b2f0e8bf9fb4",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "You joined a project team",
+      "message": "Ananya Deshmukh accepted you for the Embedded Systems Specialist role in Autonomous Campus Delivery Rover.",
+      "notification_type": "application_accepted",
+      "related_project_id": "92064be4-e72e-4429-b647-11148f1ca965",
+      "is_read": false,
+      "created_at": "2026-11-15T08:54:13.970Z"
+    },
+    {
+      "id": "7c52c1a2-ce7e-46af-8303-a4b54ccd50df",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "New team announcement",
+      "message": "Field Trial Notice: We received formal approval to mount our battery-powered GPS datalogger on Campus Shuttle Bus #2.",
+      "notification_type": "team_announcement",
+      "related_project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "is_read": true,
+      "created_at": "2026-11-15T06:54:13.970Z"
+    },
+    {
+      "id": "2970b1e7-838a-4f3a-85d5-d2806cbeb493",
+      "user_id": "fffb393e-41d9-4c72-8c6a-cf7a46e6c81a",
+      "title": "New project application",
+      "message": "Rohan Kulkarni applied for the Backend API Engineer role in MIT AOE Campus Ride Share & Shuttle Tracker.",
+      "notification_type": "project_application",
+      "related_project_id": "9aa6c3a3-0142-48e6-b479-294864629510",
+      "is_read": true,
+      "created_at": "2026-11-14T22:54:13.970Z"
+    }
+  ]
+}
