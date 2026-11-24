@@ -262,9 +262,9 @@ function ProfileWorkspace({ user, profile, onSave, saving, onSignOut, onProjects
               <span>Availability</span>
               <div className="availability-options">
                 {[['open', 'Open to collaborate'], ['limited', 'Limited right now'], ['unavailable', 'Not available']].map(([value, label]) => (
-                  <label key={value}>
-                    <input type="radio" name="availability" checked={draft.availability === value} onChange={() => setDraft({ ...draft, availability: value })} />
-                    {label}
+                  <label key={value} className={draft.availability === value ? 'selected' : ''}>
+                    <input type="radio" name="availability" value={value} checked={draft.availability === value} onChange={() => setDraft({ ...draft, availability: value })} />
+                    <span>{label}</span>
                   </label>
                 ))}
               </div>
@@ -277,9 +277,9 @@ function ProfileWorkspace({ user, profile, onSave, saving, onSignOut, onProjects
               <span>Preferred project categories</span>
               <div className="category-grid">
                 {categories.map((category) => (
-                  <label key={category}>
+                  <label key={category} className={(draft.preferred_categories || []).includes(category) ? 'selected' : ''}>
                     <input type="checkbox" checked={(draft.preferred_categories || []).includes(category)} onChange={() => setDraft({ ...draft, preferred_categories: (draft.preferred_categories || []).includes(category) ? draft.preferred_categories.filter((item) => item !== category) : [...draft.preferred_categories, category] })} />
-                    {category}
+                    <span>{category}</span>
                   </label>
                 ))}
               </div>

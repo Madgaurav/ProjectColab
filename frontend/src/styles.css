@@ -457,7 +457,7 @@ h1 em {
   font-size: 0.78rem;
 }
 
-.field input,
+.field input:not([type="checkbox"]):not([type="radio"]),
 .field select,
 .field textarea {
   width: 100%;
@@ -470,12 +470,12 @@ h1 em {
   transition: border-color 0.22s, background 0.22s, box-shadow 0.22s;
 }
 
-.field input::placeholder,
+.field input:not([type="checkbox"]):not([type="radio"])::placeholder,
 .field textarea::placeholder {
   color: var(--input-placeholder);
 }
 
-.field input:focus,
+.field input:not([type="checkbox"]):not([type="radio"]):focus,
 .field select:focus,
 .field textarea:focus {
   border-color: var(--accent-gold);
@@ -1124,25 +1124,35 @@ h1 em {
 }
 
 .availability-options {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   margin-top: 0.35rem;
+}
+
+@media (max-width: 640px) {
+  .availability-options {
+    grid-template-columns: 1fr;
+  }
 }
 
 .availability-options label,
 .category-grid label {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.65rem;
   border: 1px solid var(--border-subtle);
-  border-radius: 0.5rem;
+  border-radius: 0.55rem;
   background: var(--input-bg);
-  padding: 0.55rem 0.95rem;
+  padding: 0.7rem 0.95rem;
   color: var(--text-secondary);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   cursor: pointer;
+  user-select: none;
   transition: all 0.2s ease;
+  min-height: 2.75rem;
+  box-sizing: border-box;
 }
 
 .availability-options label:hover,
@@ -1152,9 +1162,42 @@ h1 em {
   background: var(--accent-soft-bg);
 }
 
+.availability-options label.selected,
+.availability-options label:has(input:checked),
+.category-grid label.selected,
+.category-grid label:has(input:checked) {
+  border-color: var(--accent-amber);
+  background: var(--accent-soft-bg);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 1px var(--accent-amber);
+}
+
+.availability-options input[type="radio"],
+.category-grid input[type="checkbox"] {
+  appearance: auto;
+  width: 1.05rem;
+  height: 1.05rem;
+  min-width: 1.05rem;
+  min-height: 1.05rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  flex-shrink: 0;
+  accent-color: var(--accent-amber);
+  cursor: pointer;
+}
+
+.availability-options label span,
+.category-grid label span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
   gap: 0.65rem;
   margin-top: 0.35rem;
 }
